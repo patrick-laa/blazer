@@ -37,9 +37,9 @@ module Blazer
     end
 
     def blazer_script_tag
-      return "<script>" unless Blazer.csp_nonces
+      return "<script>".html_safe unless Blazer.csp_nonces
 
-      "<script nonce=\"#{content_security_policy_nonce}\">"
+      "<script nonce=\"#{content_security_policy_nonce}\">".html_safe
     end
   end
 end
