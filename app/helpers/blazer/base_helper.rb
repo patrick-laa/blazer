@@ -35,5 +35,11 @@ module Blazer
     def blazer_series_name(k)
       k.nil? ? "null" : k.to_s
     end
+
+    def blazer_script_tag
+      return "<script>" unless Blazer.csp_nonces
+
+      "<script nonce=\"#{content_security_policy_nonce}\">"
+    end
   end
 end

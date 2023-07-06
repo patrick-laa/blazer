@@ -28,7 +28,7 @@
   </table>
 <% end %>
 
-<script>
+<%= blazer_script_tag %>
   $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase()
     $(".schema-table").filter(function() {

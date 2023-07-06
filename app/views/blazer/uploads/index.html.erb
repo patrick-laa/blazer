@@ -45,7 +45,7 @@
   </tbody>
 </table>
 
-<script>
+<%= blazer_script_tag %>
   $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase()
     $("#uploads tbody tr").filter( function() {

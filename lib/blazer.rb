@@ -69,6 +69,7 @@ module Blazer
     attr_accessor :async
     attr_accessor :images
     attr_accessor :override_csp
+    attr_accessor :csp_nonces
     attr_accessor :slack_oauth_token
     attr_accessor :slack_webhook_url
     attr_accessor :mapbox_access_token
@@ -81,6 +82,7 @@ module Blazer
   self.async = false
   self.images = false
   self.override_csp = false
+  self.csp_nonces = false
 
   VARIABLE_MESSAGE = "Variable cannot be used in this position"
   TIMEOUT_MESSAGE = "Query timed out :("

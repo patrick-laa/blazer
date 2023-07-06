@@ -1045,6 +1045,12 @@ If views are stuck with a `Loading...` message, there might be a problem with st
 override_csp: true
 ```
 
+Alternatively if your app requires scripts to use nonces, you can instruct Blazer to include nonces with:
+
+```yml
+csp_nonces: true
+```
+
 ## Upgrading
 
 ### 2.6
